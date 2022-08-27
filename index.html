@@ -1,0 +1,68 @@
+<!DOCTYPE  html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>BMI CALCULATOR</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	
+	<!--<script type="text/javascript" src="script_old.js"></script>-->
+	<script type="text/javascript" src="script.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="icon" href="media/favicon.ico" type="image/x-icon"/>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'/>
+</head>
+
+<body>
+<div id="bg_color">
+	<div id="bmi">
+		<h1>BMI RECHNER</h1>
+		<form name="bmicalc" method="get">
+		<table> <!--  cellpadding="0"cellspacing="4"-->
+			<tr>
+				<td>Alter</td>
+                <td>
+					<select name="age">
+						<option value="0">19-24</option> <!--value kann frei vergeben werden also auch faktoren (0.4,1.2 etc)|| Strings? ("Hallo Welt")-->
+						<option value="1">25-34</option>
+						<option value="2">35-44</option>
+						<option value="3">45-54</option>
+						<option value="4">55-64</option>
+						<option value="5">Über 64</option>
+					</select>
+                </td>
+				<td><!--<img class="icon" src="media/cm_w.svg" alt="PIC"/>--></td>
+				<!--<td><input name="age" type="" size="30" maxlength="3"/></td>-->
+			</tr>
+			<tr>
+				<td>Größe in cm:</td>
+				<td><input name="size" type="text" size="12" maxlength="4" value="175"/></td>
+				<td><img class="icon" id="cm" src="media/cm_w.svg" alt="PIC"/></td>
+			</tr>
+			<tr>
+				<td>Gewicht in kg:</td>
+				<td><input name="weight" type="text" size="12" maxlength="4" value="58"/></td>
+				<td><img class="icon" src="media/kg.svg" alt="PIC"/></td>
+			</tr>	
+			<tr>
+				<td>Geschlecht:</td>
+				<td>
+					<input name="sex" type="radio" checked/>Weiblich<br/> <!--checked attribute bewirkt vorausgewählten radio button-->
+					<input name="sex" type="radio"/>Männlich
+				<td>
+			</tr>
+			</table>
+		<br/>
+		<!--<img id="calc" onclick="auswertung()" src="media/calc.svg"/><br/>-->
+		<img id="calc" src="media/calc.svg" alt="CALC"  onclick="auswertung()" onmouseover="src='media/calc_hov.svg'" onmouseout="src='media/calc.svg'"/><br/>
+
+		<!--Ergebniss:<span id="result">XXX</span>-->
+		</form>
+	<br/>
+	<div id="result">ERGEBNIS</div><br/>
+
+	<br/>
+	<div id="test">min. BMI:??&nbsp;&nbsp;&nbsp;max. BMI:??</div><br/>
+	</div>
+</div>	
+</body>
+</html>

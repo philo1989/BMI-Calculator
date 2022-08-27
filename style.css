@@ -1,0 +1,80 @@
+/*CSS Document*/
+/*FONTS by Google Web Fonts
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/Droid Serif/DroidSerif.woff);
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/Droid Serif/DroidSerifbold.woff);
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url(fonts/Droid Serif/DroidSerifitalic.woff);
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: url(fonts/Droid Serif/DroidSerifbolditalic.woff);
+}*/
+* {
+	padding:0px;
+	margin:0px;
+
+}
+body {
+	font-family: 'Droid Serif', serif;
+	font-style:normal;
+	font-weight:700;
+	font-size:1.1em;
+	background-color:#000;
+}
+h1 {	
+	font-size:2em;
+}
+
+.icon {
+
+	height:23px;
+	padding-left:2px;
+}
+#bg_color {
+	width:345px; /*height:440px;*/
+	margin:20px auto;
+	border-radius:20px 0px 20px 0px;
+	background-color:#fff;
+}
+#bmi {
+	padding:10px;
+	
+	width:80%; /*height:440px;*/
+	margin:20px auto;
+	background-color:#fff;
+} 
+form {
+	font-size:1em;
+	line-height:1.2em;
+}
+#calc {
+	width:180px;
+	display:block;
+	margin:0 auto;
+}
+#result, #test{
+	text-align:center;
+	margin:0 auto;
+	font-size:2em;
+	font-style:italic;
+	font-weight:700;
+}
+#test
+{
+font-size:1.1em;
+}
